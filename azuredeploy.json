@@ -74,7 +74,7 @@
       "vmName": "lab",
       "virtualNetworkName": "lab-vnet",
       "publicIPAddressName": "lab-ip",
-      "dnsNameForPublicIP": "[uniqueString(resourceGroup().id)]",
+      "dnsNameForPublicIP": "[parameters('domain')]",
       "scriptFolder": "."
     },
     "resources": [
