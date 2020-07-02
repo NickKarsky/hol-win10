@@ -47,12 +47,15 @@
           "description": "The Windows version for the VM. This will pick a fully patched image of this given Windows version."
         }
       },
+      "domain":{
+          "type":"string"
+      },
       "_artifactsLocation": {
         "type": "string",
         "metadata": {
           "description": "The base URI where desired setup script is located. When the template is deployed using the accompanying scripts, a private location in the subscription will be used and this value will be automatically generated."
         },
-        "defaultValue": "https://raw.githubusercontent.com/danielscholl/hol-win10/master/"
+        "defaultValue": "https://raw.githubusercontent.com/NickKarsky/hol-win10/master/"
       },
       "script": {
         "type": "string",
